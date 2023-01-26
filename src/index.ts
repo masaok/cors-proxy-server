@@ -15,8 +15,6 @@ dotenv.config()
 const { PORT } = process.env
 const KEEP_ALIVE_INTERVAL = 5000
 
-console.info('HELLO: ' + process.env.HELLO)
-
 const app = express()
 app.use(cors())
 
