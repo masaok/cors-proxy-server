@@ -1,3 +1,4 @@
+import * as FetchService from '../services/FetchService'
 /**
  * Steps to add a new endpoint:
  *  - Add a route here
@@ -22,10 +23,11 @@ const routes = app => {
   })
 
   // Any URL
-  app.get('/:url', (req, res) => {
-    const { url } = req.params
-    res.json({ url })
-  })
+  // app.get('/raw/:url', (req, res) => {
+  //   const { url } = req.params
+  //   res.json({ url })
+  // })
+  app.get('/raw/:url', FetchService.fetchRaw)
 }
 
 export default routes
