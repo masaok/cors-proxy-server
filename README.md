@@ -78,20 +78,6 @@ https://medium.com/@LindaVivah/the-beginners-guide-understanding-node-js-express
 
 https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express
 
-### Node and MySQL
-
-https://www.linkedin.com/learning/databases-for-node-js-developers/use-node-js-with-mysql
-
-## Based on
-
-https://github.com/masaok/pacman-trainer-api
-
-## Packages that break Vercel build
-
-```
-    "camelcase": "^7.0.0",
-```
-
 ## TODO
 
 Try this for absolute imports:
