@@ -5,8 +5,6 @@ import express from 'express'
 import routes from './api/routes'
 import 'regenerator-runtime/runtime.js'
 
-// import dbh from "./utils/database";
-
 // Import .env environment variables
 // https://github.com/motdotla/dotenv/issues/89#issuecomment-139372079
 dotenv.config()

@@ -1,3 +1,4 @@
+import fetch from 'node-fetch'
 import { Request } from 'express'
 
 export const fetchRaw = async (req: Request, res) => {

@@ -23,10 +23,6 @@ const routes = app => {
   })
 
   // Any URL
-  // app.get('/raw/:url', (req, res) => {
-  //   const { url } = req.params
-  //   res.json({ url })
-  // })
   app.get('/raw/:url', FetchService.fetchRaw)
 }
 
