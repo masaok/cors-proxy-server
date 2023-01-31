@@ -11,7 +11,7 @@ export const fetchRaw = async (req: Request, res) => {
 
   const decoded = decodeURIComponent(url)
 
-  // const response = await fetch(decoded)
+  const response = await fetch(decoded)
   // const body = await response.text()
 
   // console.log(decoded)
