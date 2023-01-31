@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
-import { Request, Response } from 'express'
+import { Request } from 'express'
 
-export const fetchRaw = async (req: Request, res: Response) => {
+export const fetchRaw = async (req: Request, res) => {
   //   const { url } = req.params
 
   //   const url = 'https%3A%2F%2Fexample-files.online-convert.com%2Fdocument%2Ftxt%2Fexample.txt' // example live text file
