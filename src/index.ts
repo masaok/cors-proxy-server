@@ -2,8 +2,10 @@ import dotenv from 'dotenv'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import express from 'express'
+
 import routes from './api/routes'
 import 'regenerator-runtime/runtime.js'
+import { cache } from './utils/caching'
 
 // Import .env environment variables
 // https://github.com/motdotla/dotenv/issues/89#issuecomment-139372079
@@ -51,7 +53,7 @@ const handler = (req, res) => {
   res.json(status)
 }
 
-app.get('/', allowCors(handler))
+app.get('/', cache(60), allowCors(handler))
 
 // https://expressjs.com/en/api.html#app.listen
 app.listen(PORT, () => {

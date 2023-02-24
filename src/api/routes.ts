@@ -1,4 +1,5 @@
 import * as FetchService from '../services/FetchService'
+import { cache } from '../utils/caching'
 /**
  * Steps to add a new endpoint:
  *  - Add a route here
@@ -23,7 +24,7 @@ const routes = app => {
   })
 
   // Any URL
-  app.get('/raw/:url', FetchService.fetchRaw)
+  app.get('/raw/:url', cache(60), FetchService.fetchRaw)
 }
 
 export default routes
