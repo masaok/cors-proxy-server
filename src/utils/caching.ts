@@ -1,4 +1,9 @@
+import consoleStamp from 'console-stamp'
 import mcache from 'memory-cache'
+
+consoleStamp(console, {
+  format: ':date(yyyy/mm/dd HH:MM:ss.l)',
+})
 
 export const cache = (duration: number) => {
   return (req, res, next) => {
